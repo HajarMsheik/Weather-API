@@ -1,1 +1,31 @@
+body{
+  margin:0;
+  padding:0;
+}
+.app {
+  background-color: rgb(132, 132, 235);
+  transition: background-color 1s ease-in;
+  flex-direction: column;
+  display: flex;
+  align-items: center; 
+}
+  #bbb{
+    padding: 0.5rem;
+    background-color: rgb(99, 99, 228);
+   }
+   .button {
+    background-color: rgb(132, 132, 235);
+    border: none;
+    padding: 1rem;
+  }
+  #input-name{
+  border: none;
+  background: transparent;
+  margin:2rem 1rem 2rem 3rem;
+  border-bottom:1px solid black
+
+  }
+  #input-name:focus {
+    outline: none;
+  }
 

@@ -1,0 +1,16 @@
+.Photosposition{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+    margin-left: 25%;
+  }
+  .Photosposition img{
+    width: 70%;
+  }
+  label{
+    margin-left: 2rem;
+  }
+  .first{
+    display: flex;
+    flex-direction: column;
+  }

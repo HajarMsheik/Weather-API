@@ -1,65 +1,7 @@
-body{
-  margin:0;
-  padding:0;
-}
-.app {
-  background-color: rgb(132, 132, 235);
-  transition: background-color 1s ease-in;
-  flex-direction: column;
-  display: flex;
-  align-items: center;
+
+
 
   
-}
-/*  Search bar */
-   form {
-
-    background-color: blue;
-   }
-   form button {
-    background-color: rgb(132, 132, 235);
-    border: none;
-    padding: 1rem;
-  }
-  #input-name{
-  border: none;
-  background: transparent;
-  margin:2rem 1rem 2rem 3rem;
-  border-bottom:1px solid black
-
-  }
-  #input-name:focus {
-    outline: none;
-  }
-  /* //////////////////////////////////////// */
-   img{
-     width:20%; 
-   }
-   .text-under{
-     color:white;
-     margin-bottom: 1rem;
-   }
-   .under-overcast{
-    margin-bottom: 1rem;
-   }
-  
-  .Photosposition{
-    display: flex;
-    flex-direction: row;
-    margin-top: 5%;
-    margin-left: 25%;
-  }
-  .Photosposition img{
-    width: 70%;
-  }
-  label{
-    margin-left: 2rem;
-  }
-  .first{
-    display: flex;
-    flex-direction: column;
-  }
-
 
 
 

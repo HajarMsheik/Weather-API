@@ -1,7 +1,8 @@
 import React from "react";
+import "../components/Search.css";
 
-import clear from "../img/weather-icons/clear.svg";
-import "./Search.css";
+
+
 class Search extends React.Component {
   state = {
     input: ""
@@ -9,7 +10,7 @@ class Search extends React.Component {
 
   render() {
     return (
-      <div  class="searchcomp">
+      <div>
         {this.state.input}
         <input 
           type="text"
@@ -18,7 +19,7 @@ class Search extends React.Component {
             this.setState({ input: event.target.value });
           }}
         />
-        <button  
+        <button  id="bbb"
           onClick={event => {
             this.props.handleInput(this.state.input);
           }}
