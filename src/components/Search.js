@@ -3,31 +3,29 @@ import "../components/Search.css";
 
 
 
-class Search extends React.Component {
+export default class Search extends React.Component {
   state = {
-    input: ""
+    countryValue: ""
   };
+  handleInputChange = (e)=>{
+    const countryValue = e.target.value; // You get access to the field value by using the event.target.value syntax.
+    this.setState({countryValue})
+  }
 
   render() {
     return (
-      <div>
+      <div   className="SearchContainer">
         {this.state.input}
-        <input 
-          type="text"
-          id="input-name"
-          onChange={event => {
-            this.setState({ input: event.target.value });
-          }}
-        />
-        <button  id="bbb"
-          onClick={event => {
-            this.props.handleInput(this.state.input);
-          }}
-        >
-          Find weather
-        </button>
+        <input id="input-name"
+        type="text"
+        value={this.state.countryValue}
+        onChange={this.handleInputChange}
+      />
+        <button  id="bbb" onClick={()=>this.props.handleCountryChange(this.state.countryValue)}  >                              
+        
+         Find weather </button>
       </div>
     );
   }
 }
-export default Search;
+

@@ -5,21 +5,17 @@ import partlycloudy from "../img/weather-icons/partlycloudy.svg";
 import "./Weathernow.css";
 
 
-class Weathernow extends React.Component {
-    state = {
-      input: ""
-    };
+export default function HourlyWeatherItem(props) {
+         
   
-    render() {
       return (
             <div className = "app"><img src ={partlycloudy}  alt="partlycloudy"/>
-            <div className="text-under"> overcast clouds</div>
-            <div className="under-overcast"><b>Temperature  &nbsp; </b> 10<span>&#176;</span> to 11<span>&#176;</span>  C</div>
-            <div className="under-temp"> <b>Humidity &nbsp; </b> 78% &nbsp;<b>Pressure</b> &nbsp;10008.48</div>
+            <div className="text-under"> {props.description}</div>
+            <div className="under-overcast"><b>Temperature  &nbsp; </b> {Math.floor(props.minTemp- 273.15)}<span>&#176;</span> to {Math.floor(props.maxTemp- 273.15)}<span>&#176;</span>  C</div>
+            <div className="under-temp"> <b>Humidity &nbsp; </b> {props.humidity}% &nbsp;<b>Pressure</b> &nbsp;{props.pressure}</div>
             </div> 
 
 
        );
-    }
+    
 }
-export default Weathernow;
